@@ -19,7 +19,7 @@ body {
 
 .contenedor-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100% 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "nav"
@@ -41,6 +41,7 @@ body {
     grid-area: masinfo;
     display: block;
     bottom: 47px;
+    height: 60px;
 }
 
 #g-main {
@@ -71,6 +72,8 @@ body {
 
 .botonera ul { 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .botonera ul li{
@@ -90,6 +93,7 @@ body {
 
 .background_header { 
         width: 100%;
+        height: 55vh;
 }
 
 div#top-menu {
@@ -107,11 +111,10 @@ div#top-menu {
 
 .palabras-header {
     position: absolute;
-    width: 60%;
-    left: 20px;
+    width: 90%;
     z-index: 0;
     overflow: hidden;
-    padding: 60px 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
 }
 
@@ -147,12 +150,12 @@ div#top-menu {
 
 #preguntas {
     color: #BF961B;
-    height: 30em;
+    height: 23em;
 }
 
 #preguntas .frecuentes {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -163,7 +166,7 @@ div#top-menu {
 #preguntas .buton-frecuentes {
     background-color: #ffffff;
     border-radius: 45px;
-    font-size: 1.2em;
+    font-size: 15px;
     margin: 13px;
     position: relative;
     text-align: center;
@@ -205,14 +208,14 @@ footer .copy {
     color: #BF961B;
     position: relative;
     text-align: left;
-    padding: 2em 1em;
+    padding: 0.5em 1em 2em 1em;
+    font-size: 13px;
 }
 
 footer .icons-footer {
     text-align: right;
     position: relative;
     /* bottom: 0px; */
-    padding-right: 4em;
     text-decoration: none;
 }
 
@@ -223,7 +226,9 @@ img.resolucion-delpi {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 
@@ -231,14 +236,36 @@ img.resolucion-delpi {
 
 /* min-width: 768px de index */
 @media (min-width: 768px){
+    
+    #preguntas {
+        color: #BF961B;
+        height: 30em;
+    }
 
 	/* botonera direccion */
 	.botonera {
         flex-direction: row;
     }
+
+    .botonera ul { 
+        display: flex;
+    }
+
+    .background_header { 
+        width: 100%;
+        height: 100%;
+    }
+
 	/* palabras header*/
+
 	.palabras-header {
+
         width: 60%;
+        left: 20px;
+        z-index: 0;
+        overflow: hidden;
+        padding: 60px 20px;
+        box-sizing: border-box;
     }
 
     .palabras-header h1 {
@@ -254,8 +281,39 @@ img.resolucion-delpi {
     }
 
     #masinfo {
-        bottom: 90px;
+        bottom: 47px;
     }
+
+    /*-- preguntas --*/
+    #preguntas .frecuentes {
+    
+        font-size: 1.5em;
+    }
+    
+    #preguntas .buton-frecuentes {
+    
+        font-size: 1.2em;
+    }
+
+    /* --- footer --- */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    footer .copy {
+        padding: 2em 1em;
+        padding-right: 4em;
+        font-size: 1em;
+    }
+    
+    footer .icons-footer {
+        text-align: right;
+        padding: 2em 4em;
+    }
+
 }
 
 @media (min-width: 1020px){
@@ -275,6 +333,10 @@ img.resolucion-delpi {
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.6em;
         padding: 10px 0;
+    }
+
+    #masinfo {
+        bottom: 25px;
     }
 }
 
@@ -306,7 +368,7 @@ img.resolucion-delpi {
 
 .contenedor{
     display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100% 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"nav"  
@@ -355,27 +417,28 @@ img.resolucion-delpi {
 }
 
 .header-top h3 {
-    padding: 20px 0 0 5px;
+    padding: 20px 0 0 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #474747;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .buscar {
-    padding: 20px 20px 10px 30px;
+    padding: 10px 4px 5px 6px;
 }
 
 .search {
-    border-radius: 30px;
-    padding: 10px 40px;
+    border-radius: 20px;
+    padding: 10px 6px;
     width: 100%;
     background-color: #1f1f1f;
+    font-size: 10px;
 }
 
 .header-ordenar {
     background-color: azure;
     text-align: right;
-    padding: 16px 60px 9px 0;
+    padding: 16px 16px 9px 0;
     margin: 0 30px;
 }
 
@@ -388,7 +451,7 @@ img.resolucion-delpi {
 }
 
 .figura {
-    width: 30%;
+    width: 75%;
     background-color: #02597c;
     margin: 30px;
 }
@@ -426,6 +489,8 @@ img.resolucion-delpi {
     color: #ffffff;
     font-size: 0.6em;
     padding: 13px 10px;
+    margin-top: 15px;
+
 }
 
 .lateral-categoria .todos-product h5{
@@ -477,10 +542,11 @@ img.resolucion-delpi {
     .buscar {
         padding: 20px 56px 10px 30px;
     }
-
+    
     .search {
         padding: 10px 67px;
         margin: 5px;
+        font-size:1em; 
     }
 
     .lateral-categoria {
@@ -489,6 +555,10 @@ img.resolucion-delpi {
 
     .lateral-noticias {
         height: 65%;
+    }
+
+    .figura {
+        width: 30%;
     }
 
     #aside-r {
@@ -528,7 +598,7 @@ img.resolucion-delpi {
 
 .grid-contenedor-reglamento{
     display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100% 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"nav"  
@@ -568,7 +638,7 @@ img.resolucion-delpi {
 
 .background-reglamento img {
     width: 100%;
-    height: 20em;
+    height: 10em;
 }
 
 .titulo-header {
@@ -595,8 +665,9 @@ img.resolucion-delpi {
     padding: 20px 0 20px 20px ;
 }
 
-.lista-gen{
+.lista-gen {
     padding: 0 30px 20px 70px;
+    font-size: 14px;
 }
 
 .bloque-contenido {
@@ -615,12 +686,14 @@ img.resolucion-delpi {
 .bloque-contenido ul li {
     list-style: none;
 }
+
 .reglas-descargar {
     background-color: #2E7D32;
     text-align: center;
     border-radius: 20px;
     padding: 15px;
-    margin: 20px 60px;
+    margin: 20px 20px;
+    font-size: 13px;
 }
 
 hr {
@@ -662,9 +735,17 @@ hr {
 /* min-width: 768px de reglamento */
 
 @media (min-width: 768px){
+    .info-gen {
+        text-align: center;
+    }
 
-    .reglas-descargar{
-        width: 70%;
+    .lista-gen {
+        font-size: 1.1em;
+    }
+
+    .reglas-descargar {
+        width: 60%;
+        margin: 20px auto;
     }
 
 }
@@ -675,7 +756,7 @@ hr {
 @media (min-width: 1020px){
     .grid-contenedor-reglamento{
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 70% 30%;
         grid-template-rows: auto;
         grid-template-areas: 
         "nav nav"  
@@ -689,12 +770,11 @@ hr {
         display: inline;
     }
 
-    #aside-gridr{
-        margin: 20px 20px 0 0;
+    #aside-gridr {
+        margin: 30px;
     }
 
     .bloque-contenido {
-        visibility: visible;
         visibility: visible;
         display: list-item;
         padding: 20px;
@@ -706,9 +786,10 @@ hr {
     text-align: center;
 }
 
-    .reglas-descargar{
-        width: 40%;
-    }
+    .reglas-descargar {
+    width: 70%;
+    font-size: 1.3em;
+}
 
 }
 
@@ -721,7 +802,7 @@ hr {
 }
 .grid-inscripciones{
     display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100% 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"nav"  
@@ -755,10 +836,9 @@ hr {
     color: #ffffff;
     position: absolute;
     width: 90%;
-    top: -10%;
+    top: -6%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .background-inscrip2 {
@@ -769,35 +849,33 @@ hr {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 3px 30px 30px 30px;
+    margin: 0px 30px 30px 16px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-
 }
 
-.inscripciones-title{
+.inscripciones-title {
     padding: 30px;
     text-align: center;
+    font-size: 1em;
 }
 
-.enviar-inscrip{
+.texto-inscrip {
+    padding: 11px;
     text-align: center;
-}
-
-.texto-inscrip{
-    padding: 30px;
-    text-align: center;
+    font-size: 1em;
 }
 
 .form-centrado {
-    font-size: 2em;
-    margin: 0 100px;
+    font-size: 1em;
+    margin: 0 70px;
     padding-top: 6px;
 }
 
 .enviar-inscrip{
-    width: 39%;
+    width: 60%;
     margin: 30px auto;
+    text-align: center;
 }
 
 .enviar-ins{
@@ -815,10 +893,20 @@ hr {
 
 @media (min-width: 768px){
 
+    .texto-inscrip {
+        padding: 11px;
+        text-align: center;
+        font-size: 1.6em;
+    }
+    .background-inscrip {
+        top: -5%;
+    }
+
     .background-inscrip2{
         left: 8px;
+        margin: 0px 30px 30px 30px;
     }
-    
+
     .form-centrado {
         font-size: 2.2em;
         margin: 0 182px;
@@ -830,18 +918,20 @@ hr {
 
 @media (min-width: 1024px){
 
-    .background-inscrip {
-        top: -9%;
-    }
 
     .background-inscrip2{
-        left: 39px;
+        left: 22px;
+        margin: 0px 30px 30px 10px;
     }
     
     .form-centrado {
         font-size: 2.2em;
         margin: 0 290px;
         padding-top: 6px;
+    }
+
+    .inscripciones-title {
+        font-size: 2em;
     }
 }
 
@@ -864,7 +954,7 @@ hr {
 
 .grid-contacto{
     display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100% 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"nav"  
@@ -897,13 +987,70 @@ hr {
 
 .contacto {
     background-color: rgb(36 36 36 / 80%);
+    margin: 26px;
+    justify-content: space-around;
+    border-radius: 60px;
+}
+
+/* ----- contacto style ----- */
+
+.contacto .contact-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 3px;
+    color: #ffffff;
+    border-bottom: solid 3px;
+    margin: 10px;
+}
+
+.contacto .formulario {
+    overflow: hidden;
+    padding: 14px 23px;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+.form {
+    display: grid;
+}
+
+.form label {
+    padding: 5px 0px;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+
+
+/* ----- mapa style ----- */
+
+.mapa-container {
+    text-align: center;
+    font-size: 1.5em;
+    height: 300px;
+    padding: 3px;
+    color: #ffffff;
+    margin: 26px;
+    background-color: rgb(0 0 0 / 70%);
+    border-radius: 60px;
+}
+
+fieldset.contact-title {
+    margin: 22px;
+    border-style: none;
+    height: 80%;
+}
+
+/* 
+.contacto {
+    background-color: rgb(36 36 36 / 80%);
     margin: 50px;
     justify-content: space-around;
     border-radius: 20%;
     
 }
-
-/* ----- contacto style ----- */
 
 .contacto .contact-title {
     text-align: center;
@@ -936,9 +1083,6 @@ hr {
 }
 
 
-
-/* ----- mapa style ----- */
-
 .mapa-container {
     text-align: center;
     font-size: 1.5em;
@@ -952,7 +1096,9 @@ hr {
 fieldset.contact-title {
     margin: 33px;
     border-style: none;
-}
+} */
+
+
 
 /* ---- MEDIAS QUERIS DE contactos ---- */
 /* min-width: 768px de contactos */
@@ -969,6 +1115,8 @@ fieldset.contact-title {
 
     .mapa-container{
         margin: 30px 20%;
+        height: 400px;
+
     }
 }
 
@@ -992,6 +1140,8 @@ fieldset.contact-title {
 
     .mapa-container{
         margin: 20% 10% 20% 0%;
+        height: 400px;
+
     }
 
 }
