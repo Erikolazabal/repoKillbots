@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reglamento - Kill bots</title>
     <link rel="icon" href="../img/favicon.png">
+    <!-- bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- wow js -->
+	<link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
-<body>
+<body class="body-bgd">
     <div class="grid-contenedor-reglamento">
-    <nav class="botonera" id="g-nav">
-        <a href="../index.html">
-        <img src="../img/killbots.svg" class="logo-nav" alt="logo kill bots">
-        </a>
-    <!-- Inicio de barra de busqueda -->
-        <ul>
-            <li>
-                <a href="../index.html#inicio">Inicio</a>
-            </li>
-            <li>
-                <a href="../index.html#preguntas">Preguntas Frecuentes</a>
-            </li>
-            <li>
-                <a href="../views/productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="../views/reglamento.html">Reglamento</a>
-            </li>
-            <li>
-                <a href="../views/inscripciones.html">Inscripciones</a>
-            </li>
-            <li>
-                <a href="../views/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-sm bg sticky-top" id="g-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../img/killbots.svg" alt="">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html#g-main">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/reglamento.html">Reglamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <!-- header -->
     <header id="header-gridr"class="background-reglamento">
         <img src="../img/header.jpg" alt="header">
@@ -43,8 +51,8 @@
         <h1 class="centrado-reglamento">Reglamento</h1>
         </div>
     </header>
-    <section>
-        <div id="info-regla">
+    <section id="info-regla">
+        <div>
             <h2 class="info-gen">INFORMACIÓN GENERAL</h2>
             <div class="lista-gen">
             <ul>
@@ -55,7 +63,7 @@
             </ul>
             </div>
         </div>
-        <div class="reglas-descargar">
+        <div class="reglas-descargar wow pulse">
             <a href="" download="reglas - killbots" class="btn">DESCARGAR REGLAMENTO COMPLETO</a>
         </div>
         
@@ -154,5 +162,13 @@
         </div>
     </footer>
 </div>
+<!-- bootstrap js -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 </body>
 </html>
