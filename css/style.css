@@ -23,6 +23,11 @@
 
 }
 
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 30px;
+}
+
+
 /* ---- grid DE INDEX ---- */
 
 .contenedor-grid {
