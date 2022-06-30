@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.navbar-toggler-icon{
+filter: invert(1);
+}
+
 .bg-verde{
     background-color: hsl(152, 69%, 31%);
 }
