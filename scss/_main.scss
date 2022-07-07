@@ -1,0 +1,64 @@
+/*------ palabras top ------*/ 
+.palabras-header {
+    position: absolute;
+    width: 90%;
+    z-index: 0;
+    overflow: hidden;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.palabras {
+    color: #ffffff;
+    background-color: rgb(80 0 7 / 51%);
+    border-radius: 9px;
+    padding: 20px;
+    h1 {
+    padding: 10px 0;
+    font-family:$titleFont;
+    font-size: large;
+    }
+}
+
+
+
+.palabras .parafo {
+    font-family: $timesFont;
+    font-size: $textMd;
+    padding: 10px 0;
+}
+
+.mas-info {
+    width: 9%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 0;
+    
+}
+
+/*------ main preguntas ------*/ 
+
+#preguntas {
+    margin-bottom: 40px;
+}
+
+.preg{
+    margin: 0;
+}
+
+.frecuentes {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.preguntas-main {
+    font-size: $textLg;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font-family: $mainFont;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}

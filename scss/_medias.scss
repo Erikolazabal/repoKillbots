@@ -1,0 +1,101 @@
+/* ---- MEDIAS QUERIS DE INDEX ---- */
+
+/* min-width: 768px de index */
+@media (min-width: 768px){
+    
+    #preguntas {
+        height: 100%;
+    }
+
+    .background_header { 
+        width: $width1;
+        height: 100%;
+    }
+
+	/* palabras header*/
+
+	.palabras-header {
+        width: ($width3 + 10%);
+        left: 20px;
+        z-index: 0;
+        overflow: hidden;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        h1 {
+            padding: 10px 0;
+            font-size: x-large;
+        }
+    }
+
+    .palabras .parafo {
+        font-family:$timesFont;
+        font-size:$textLg;
+        padding: 10px 0;
+    }
+
+    #masinfo {
+        bottom: 39px;
+    }
+
+/*-- preguntas --*/
+    #preguntas 
+        .frecuentes {
+            font-size:$textXl;
+        }
+        .buton-frecuentes {
+            font-size:$textLg;
+        }
+
+    /* --- footer --- */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .copy {
+        padding: 2em 1em;
+        padding-right: 4em;
+        font-size:$textMd;
+        }
+        .icons-footer {
+        text-align: right;
+        padding: 2em 4em;
+        }
+    }
+}
+
+@media (min-width: 1020px){
+
+	/* palabras header*/
+	.palabras-header {
+        width: ($width3 + 10%);
+        h1 {
+            padding: 10px 0;
+            font-size: xx-large;
+        }
+    }
+    
+    .palabras .parafo {
+        font-size:$textLg;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1200px){
+
+	/* palabras header*/
+	.palabras-header {
+        width: ($width3 + 10%);
+        bottom: 10%;
+        left: 5%;
+        h1 {
+            padding: 10px 0;
+            font-size: xx-large;
+        }
+    }
+
+    .palabras .parafo {
+        font-size:$textXl;
+        padding: 10px 0;
+    }
+}

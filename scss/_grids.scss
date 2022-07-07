@@ -1,0 +1,36 @@
+/* ---- grid DE INDEX ---- */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav"
+    "header"
+    "masinfo"
+    "main"
+    "footer";
+}
+
+#g-nav {
+    grid-area: nav;
+}
+
+#g-header {
+    grid-area: header;
+}
+
+#masinfo {
+    grid-area: masinfo;
+    display: block;
+    bottom: 38px;
+    height: 60px;
+}
+
+#g-main {
+    grid-area: main;
+}
+
+#g-footer {
+    grid-area: footer;
+}
+

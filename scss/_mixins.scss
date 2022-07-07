@@ -1,0 +1,8 @@
+// mixins
+
+@mixin d-footer(){
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+}

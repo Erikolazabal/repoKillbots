@@ -1,0 +1,22 @@
+//width´s
+$width1:100%;
+$width2:75%;
+$width3:50%;
+$width4:25%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-toggler-icon{
+	background-image: url(https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png);
+}
+
+
+.background_header{ 
+	width: $width1;
+	height: 55vh;
+}
+
