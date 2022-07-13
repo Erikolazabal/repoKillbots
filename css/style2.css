@@ -11018,6 +11018,9 @@ img.resolucion-delpi {
 }
 /* min-width: 1024px de inscripciones */
 @media (min-width: 1024px) {
+  .background-reglamento img {
+    height: 16em;
+  }
   .background-inscrip2 {
     left: 22px;
     margin: 0px 30px 30px 10px;

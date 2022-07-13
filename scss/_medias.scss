@@ -301,7 +301,11 @@
 /* min-width: 1024px de inscripciones */
 
 @media (min-width: 1024px){
-
+    .background-reglamento{
+        img {
+        height: 16em;
+        }
+    }
 
     .background-inscrip2{
         left: 22px;
