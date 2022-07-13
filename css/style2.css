@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*------- index -------*/
 /*------ palabras top ------*/
 .palabras-header {
   position: absolute;
@@ -62,6 +63,325 @@
   overflow: hidden;
 }
 
+/*--------- Productos --------*/
+/*------ header Productos ------*/
+.header-top {
+  background-color: azure;
+  margin: 15px 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header-top h3, .header-top .h3 {
+  padding: 20px 0 0 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #474747;
+  font-size: 1em;
+}
+
+.buscar {
+  padding: 10px 4px 5px 6px;
+}
+
+.search {
+  border-radius: 20px;
+  padding: 10px 6px;
+  width: 100%;
+  background-color: #1f1f1f;
+  font-size: 10px;
+}
+
+.header-ordenar {
+  background-color: azure;
+  text-align: right;
+  padding: 16px 16px 9px 0;
+  margin: 0 30px;
+}
+
+/*------ main Productos ------*/
+.main-productos {
+  text-align: center;
+  margin: 20px 30px 15px 30px;
+  background-color: #706f6f;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: #1f1f1f;
+}
+
+.figura div {
+  text-align: center;
+}
+
+/*------ lateral  ------*/
+.lateral-categoria {
+  background-color: #d4d4d4;
+  margin: 20px;
+  height: 30%;
+  text-align: center;
+}
+
+.titulos-lat {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.6em;
+  padding: 13px 10px;
+  margin-top: 15px;
+}
+
+.todos-product h5, .todos-product .h5 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.lateral-noticias {
+  background-color: #d4d4d4;
+  margin: 20px;
+  height: 60%;
+  text-align: center;
+}
+.lateral-noticias .youtube {
+  width: 90%;
+  margin: 10px;
+}
+
+/*--------- Reglamento --------*/
+/*------ header reglamento ------*/
+.background-reglamento img {
+  width: 100%;
+  height: 10em;
+}
+
+.titulo-header {
+  color: #ffffff;
+  position: relative;
+  bottom: 21%;
+}
+
+.centrado-reglamento {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+}
+
+/*------ subnav reglamento ------*/
+.contenedorMiga {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.listaMiga {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0;
+  margin: 16px 10px 0;
+  list-style: none;
+}
+.listaMiga > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/ ";
+}
+.listaMiga a {
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+}
+.listaMiga a:hover {
+  color: #000000;
+}
+
+.info-gen {
+  color: #000000;
+  margin: 15px 20px;
+}
+
+.lista-gen {
+  padding: 0 24px 20px 20px;
+  font-size: 0.75em;
+}
+
+.bloque-contenido {
+  visibility: hidden;
+  display: none;
+  background-color: #9ea1a1;
+  border-radius: 40px;
+  text-align: center;
+  list-style: none;
+}
+.bloque-contenido ul li {
+  list-style: none;
+}
+.bloque-contenido ul li a {
+  color: #6e630f;
+}
+
+.reglas-descargar {
+  background-color: #2E7D32;
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px 20px;
+  font-size: 0.8em;
+}
+
+hr {
+  background-color: #000000;
+}
+
+.li-reglamento {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.reglas-text, .reglas-text2 {
+  font-size: 0.6em;
+  text-align: start;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  list-style: decimal;
+}
+
+span.subrayado {
+  background-color: hsl(208deg, 96%, 11%);
+}
+
+.reglas-descargar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.75em;
+}
+
+.reglas-web {
+  color: #000000;
+  font-size: 1.6em;
+  font-family: "Bebas Neue", cursive;
+  width: 90%;
+  overflow: hidden;
+  padding: 0px 10px;
+  border: solid rgb(1, 30, 56) 2px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/*--------- Inscripciones --------*/
+/*------ main Inscripciones ------*/
+.background-inscrip {
+  background-color: rgba(1, 39, 72, 0.78);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  width: 90%;
+  top: -6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background-inscrip2 {
+  background-color: rgba(1, 39, 72, 0.78);
+  color: #ffffff;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0px 30px 30px 16px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.inscripciones-title, .texto-inscrip {
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.form-centrado {
+  font-size: 1em;
+  margin: 0 70px;
+  padding-top: 6px;
+}
+
+.enviar-inscrip {
+  width: 60%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.enviar-ins {
+  font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+  background: #1303ff;
+  font-size: 10px;
+  color: white;
+  width: 100%;
+  border-radius: 30px;
+  height: 50px;
+}
+
+/*--------- Contacto --------*/
+/*------ main Contacto ------*/
+.contacto {
+  background-color: rgba(36, 36, 36, 0.8);
+  margin: 26px;
+  justify-content: space-around;
+  border-radius: 60px;
+}
+.contacto .formulario {
+  overflow: hidden;
+  padding: 14px 23px;
+  box-sizing: border-box;
+  margin: 30px auto;
+}
+.contacto .contact-title {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding: 3px;
+  color: #ffffff;
+  border-bottom: solid 3px;
+  margin: 10px;
+}
+
+.form {
+  display: grid;
+}
+.form label {
+  padding: 5px 0px;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+/* ----- mapa style ----- */
+.mapa-container {
+  text-align: center;
+  font-size: 1.6em;
+  height: 315px;
+  color: #ffffff;
+  margin: 26px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 60px;
+}
+
+fieldset.contact-title {
+  margin: 22px;
+  border-style: none;
+  height: 80%;
+}
+
 /* ---- grid DE INDEX ---- */
 .contenedor-grid {
   display: grid;
@@ -87,6 +407,125 @@
 
 #g-main {
   grid-area: main;
+}
+
+#g-footer {
+  grid-area: footer;
+}
+
+/*------ Productos ------*/
+/*------ grid de productos------*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "subnav" "aside" "productos" "footer";
+}
+
+#g-nav {
+  grid-area: nav;
+}
+
+#sub-nav {
+  grid-area: subnav;
+}
+
+#productos {
+  grid-area: productos;
+  margin-bottom: 20px;
+}
+
+#aside-r {
+  grid-area: aside;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/*------ reglamento ------*/
+/*------ grid de reglamento ------*/
+.grid-contenedor-reglamento {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "subnav" "info" "aside" "main" "footer";
+}
+
+#g-nav {
+  grid-area: nav;
+}
+
+#header-gridr {
+  grid-area: subnav;
+}
+
+#main-gridr {
+  grid-area: main;
+  margin-bottom: 20px;
+}
+
+#info-regla {
+  grid-area: info;
+}
+
+#aside-gridr {
+  grid-area: aside;
+}
+
+#g-footer {
+  grid-area: footer;
+}
+
+/*------ Inscripciones ------*/
+/*------ grid de inscripciones ------*/
+.body-inscrip {
+  background-color: #ffffff;
+}
+
+.grid-inscripciones {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "subnav" "main" "footer";
+}
+
+#g-nav {
+  grid-area: nav;
+}
+
+#header-grid-ins {
+  grid-area: subnav;
+}
+
+#main-grid-ins {
+  grid-area: main;
+  position: relative;
+}
+
+#g-footer {
+  grid-area: footer;
+}
+
+/*------ contacto ------*/
+/*------ grid de contacto ------*/
+.grid-contacto {
+  display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "main" "mapa" "footer";
+}
+
+#g-nav {
+  grid-area: nav;
+}
+
+#main-contact {
+  grid-area: main;
+}
+
+#mapa {
+  grid-area: mapa;
 }
 
 #g-footer {
@@ -10213,6 +10652,11 @@ textarea.form-control-lg {
   height: 55vh;
 }
 
+.body-products {
+  background-image: url(../img/header-2.jpg);
+  background-attachment: fixed;
+}
+
 .bg-verde {
   background-color: hsl(152deg, 69%, 31%);
 }
@@ -10282,6 +10726,18 @@ textarea.form-control-lg {
   color: hsl(45deg, 75%, 43%);
   background-color: rgb(1, 30, 56);
   box-shadow: none;
+}
+
+.bg-colors {
+  background-color: rgb(255, 255, 255);
+}
+
+.texto-inscrip {
+  padding: 11px;
+}
+
+.reglas-text2 {
+  list-style: lower-alpha;
 }
 
 footer {
@@ -10410,6 +10866,217 @@ img.resolucion-delpi {
   .palabras .parafo {
     font-size: 1.6em;
     padding: 10px 0;
+  }
+}
+/* ---- MEDIAS QUERIS DE productos ---- */
+/* min-width: 768px de productos */
+@media (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "subnav" "productos" "aside" "footer";
+  }
+  .header-top {
+    margin: 15px 30px 0;
+  }
+  .header-top h3, .header-top .h3 {
+    padding: 20px 0 0 40px;
+    font-family: "Roboto", sans-serif;
+    color: #474747;
+    font-size: 2em;
+  }
+  .buscar {
+    padding: 20px 56px 10px 30px;
+  }
+  .search {
+    padding: 10px 67px;
+    margin: 5px;
+    font-size: 1em;
+  }
+  .lateral-categoria {
+    margin: 0 20px;
+  }
+  .lateral-noticias {
+    height: 65%;
+  }
+  .figura {
+    width: 30%;
+  }
+  #aside-r {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1020px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav" "subnav aside" "productos aside " "footer footer";
+  }
+  .lateral-categoria {
+    background-color: #d4d4d4;
+    margin: 20px;
+    height: 30%;
+  }
+  .titulos-lat {
+    background-color: hsl(0deg, 0%, 0%);
+    color: #ffffff;
+    padding: 13px 10px;
+    margin-top: 15px;
+  }
+  .lateral-noticias {
+    height: 45%;
+  }
+  #productos {
+    margin-bottom: 20px;
+  }
+}
+/* ---- MEDIAS QUERIS DE Reglamento ---- */
+/* min-width: 768px de reglamento */
+@media (min-width: 768px) {
+  .listaMiga {
+    margin: 16px 20px 0;
+  }
+  .info-gen {
+    text-align: center;
+  }
+  .lista-gen {
+    font-size: 1.1em;
+  }
+  .reglas-web p {
+    text-align: center;
+    padding: 0px 40px;
+  }
+  .reglas-text, .reglas-text2 {
+    font-size: 0.7em;
+  }
+  .reglas-descargar {
+    width: 60%;
+    margin: 20px auto;
+  }
+  .reglas-descargar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+  }
+}
+/* min-width: 1020px de reglamento */
+@media (min-width: 1020px) {
+  .grid-contenedor-reglamento {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "subnav subnav" "info aside" "main main" "footer footer";
+  }
+  #info-regla {
+    display: inline;
+  }
+  #aside-gridr {
+    margin: 30px;
+  }
+  .bloque-contenido {
+    visibility: visible;
+    display: list-item;
+    padding: 20px;
+    margin: 5px;
+    text-align: start;
+  }
+  .bloque-contenido h3, .bloque-contenido .h3 {
+    text-align: center;
+  }
+  .reglas-descargar {
+    width: 70%;
+    font-size: 1.3em;
+  }
+  .reglas-web p {
+    text-align: center;
+    padding: 0px 40px;
+    font-size: 0.8em;
+  }
+}
+/* ---- MEDIAS QUERIS DE inscripciones ---- */
+/* min-width: 768px de inscripciones */
+@media (min-width: 768px) {
+  .texto-inscrip {
+    padding: 11px;
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .background-inscrip {
+    top: -5%;
+  }
+  .background-inscrip2 {
+    left: 8px;
+    margin: 0px 30px 30px 30px;
+  }
+  .form-centrado {
+    font-size: 2.2em;
+    margin: 0 182px;
+    padding-top: 6px;
+  }
+}
+/* min-width: 1024px de inscripciones */
+@media (min-width: 1024px) {
+  .background-inscrip2 {
+    left: 22px;
+    margin: 0px 30px 30px 10px;
+  }
+  .form-centrado {
+    font-size: 2.2em;
+    margin: 0 290px;
+    padding-top: 6px;
+  }
+  .inscripciones-title, .texto-inscrip {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1280px) {
+  .background-inscrip2 {
+    left: 60px;
+  }
+  .form-centrado {
+    font-size: 2.2em;
+    margin: 0 290px;
+    padding-top: 6px;
+  }
+}
+/* ---- MEDIAS QUERIS DE contactos ---- */
+/* min-width: 768px de contactos */
+@media (min-width: 768px) {
+  .body-products {
+    background-repeat: round;
+  }
+  .contacto {
+    margin: 30px 20%;
+  }
+  .mapa-container {
+    margin: 30px 20%;
+    height: 400px;
+  }
+  .enviar-ins {
+    font-size: 0.8em;
+  }
+  .enviar-inscrip {
+    width: 26%;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+/* min-width: 1024px de contactos */
+@media (min-width: 1024px) {
+  .grid-contacto {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "main mapa" "footer footer";
+  }
+  .contacto {
+    margin: 20% 9%;
+  }
+  .mapa-container {
+    margin: 20% 10% 20% 0%;
+    height: 400px;
   }
 }
 
