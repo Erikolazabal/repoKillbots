@@ -32,5 +32,11 @@ $colors:(
         list-style: lower-alpha;
 }
 
+.restricciones-web {
+    @extend .reglas-web;
+    padding: 10px !important;
+    text-align: start;
+}
+
 //math
 //hay varios math que estan puestos en _main.scss (que use para los font-size)

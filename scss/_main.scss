@@ -212,6 +212,7 @@
 
 .info-gen {
     color: #000000;
+    text-align: center;
     margin: 15px 20px;
 }
 
@@ -242,10 +243,19 @@
     padding: 15px;
     margin: 20px 20px;
     font-size: ($textMd - 0.2em);
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: ($textMd - 0.25em);
+    }
 }
 
 hr {
     background-color: #000000;
+}
+
+.nover{
+    display: none;
 }
 
 .li-reglamento{
@@ -255,22 +265,34 @@ hr {
 .text-white {
     color: #ffffff;
 }
+
+.container-rest {
+    padding: 15px;
+}
+
+.container-reglas-web{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+.bg-blanco {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 5px 5px 40px;
+}
+
 .reglas-text{
-    font-size: $textSm;
-    text-align: start;
+    font-size: ($textSm + 0.25em);
     font-family: $mainFont;
     margin-bottom: 10px;
     list-style: decimal;
+    letter-spacing: 0;
+    line-height: 26px;
 }
 
 span.subrayado {
-    background-color: hsl(208deg 96% 11%);
-}
-
-.reglas-descargar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: ($textMd - 0.25em);
+    background-color: hsl(0deg 0% 72%);
 }
 
 .reglas-web{
@@ -280,11 +302,13 @@ span.subrayado {
     width: 90%;
     overflow: hidden;
     padding: 0px 10px;
-    border: solid rgb(1 30 56) 2px;
     box-sizing: border-box;
     margin: 20px auto;
     text-align: center;
+}
 
+.img-web{
+    padding: 60px 20px;
 }
 
 /*--------- Inscripciones --------*/
