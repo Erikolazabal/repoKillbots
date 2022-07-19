@@ -119,7 +119,7 @@
 /*------ grid de inscripciones ------*/
 
 .body-inscrip{
-    background-color: #ffffff;
+    background-color: #738b95;
 }
 .grid-inscripciones{
     display: grid;
@@ -127,7 +127,6 @@
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"nav"  
-    "subnav"
     "main"
 	"footer";
 }
@@ -136,10 +135,6 @@
     grid-area: nav;
 }
 
-#header-grid-ins{
-	grid-area: subnav;
-    
-}
 
 #main-grid-ins{
 	grid-area: main;

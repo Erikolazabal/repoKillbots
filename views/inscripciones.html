@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este proyecto promueve la construcción de robots a partir de componentes electromecánicos en desuso, para luego utilizarlos en competencias conocidas como BattleBots. El objetivo principal es desarrollar estrategias y herramientas didácticas en la enseñanza de las artes técnicas que propicien el aprendizaje significativo y sirvan como práctica dentro del perfil profesional del Técnico Electrónico.">
+    <meta name="description" content="Inscripcion para la competencia de killbots - en Escuela Técnica N°13 Ing. J. L. DELPINI, ET N°13, DE 21, Jose Luis Delpini, Lugano.">
     <meta name="keywords" content="pelea de robot,robots,delpini,torneo,argentina,electrónica">
     <title>Inscripciones - Kill bots</title>
-    <link rel="icon" href="../img/favicon.png">
+    <link rel="icon" href="../img/Icons/favicon.webp">
     <!-- bootstrap -->
     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/animate.css"><!-- wow js --> 
 </head>
 <body class="body-inscrip">
     <div class="grid-inscripciones">
         <nav class="navbar navbar-expand-sm bg sticky-top" id="g-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                <img src="../img/killbots.svg" alt="Logo de killbots">
+                <img src="../img/Icons/killbots.svg" alt="Logo de killbots">
                 </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -43,71 +44,41 @@
             </div>
         </nav>
     <!-- header -->
-    <header id="header-grid-ins"class="background-reglamento">
-        <img src="../img/header.jpg" alt="header de escuela">
-    </header>
-    <main id="main-grid-ins">
-        <div>
-            <div class="background-inscrip">
-                <div>
-                <h1 class="texto-inscrip">INSCRIPCIONES</h1>
+    <br>
+    <main class="main-grid-ins">
+        <div class="container-inscrip">
+            <div class="formulario-inscrip mitad-container">
+                <form class="formu" action="furmulario-inscrip">
+                <h1>Inscripcion</h1>
+                <div class="iconos-container">
+                    <a href="https://www.facebook.com/ET13Delpini" class="social"><img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo--v1.png"></a>
+                    <a href="https://www.facebook.com/ET13Delpini" class="social"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"></a>
                 </div>
-                <div>
-                <h3 class="texto-inscrip">Proseso de incripción</h3>
+                <span class="proceso-inscrip">Proceso de inscripción</span>
+                <input type="email" placeholder="Escribe tu email" />
+                <input type="escuela" placeholder="Escribe tu escuela" />
+                <div class="d-flex">
+                <input class="input-med" type="curso" placeholder="Curso" />
+                <input class="input-med" type="number" placeholder="Integrantes" />
                 </div>
+                <input type="provicia" placeholder="Seleciona tu provicia" />
+                <a href="../404.html">Ya tienes cuenta?</a>
+                <button class="boton-enviar">Inscribirme</button>
+                </form>
             </div>
-            <div class="background-inscrip2">
-                    <div class="formulario-inscrip">
-                    <form class="incrip" action="inscripciones.php">
-                        <div class="form-centrado">
-                            <label for="email">Correo electronico :</label> <br>
-                                <input type="email" id="email" placeholder="Escribe tu mail" >
-                        </div><br>
-                        <div class="form-centrado">
-                            <label for="escuela">Escuela:</label><br>	
-                                <input type="escuela" id="escuela" placeholder="Escribe tu escuela">
-                        </div><br>
-                        <div class="form-centrado">
-                        <label for="curso">Curso :</label>	<br>
-                            <input type="curso" id="curso" placeholder="Escribe en que año estas">
-                        </div><br>
-                        <div class="form-centrado">
-                        <label for="Integrantes">Integrantes :</label>	<br>
-                            <input type="integrantes" id="integrantes" placeholder="Numero de integrantes">
-                        </div><br>
-                        <div class="form-centrado">
-                            <label for="provincia">Provicia :</label>	<br>
-                            <input type="provincia" id="provincia" placeholder="seleciona tu provincia">
-                        </div><br>
-                        <div class="form-centrado"> 
-                            <label for="localidad">localidad o comuna :</label>	<br>
-                            <input type="localidad" id="localidad" placeholder="localidad o comuna">
-                        </div><br>
-                        <hr>
-                        <div class="contact-emer">
-                            <h2 class="inscripciones-title">CONTACTO DE EMERGENCIA</h2>
-                        <div class="form-centrado">
-                            <label for="nombre">Nombre y Apellido :</label>	<br>
-                            <input type="nombre" id="nombre" placeholder="Nombre y Apellido">
-                        </div><br>
-                        <div class="form-centrado">
-                            <label for="Telefono">Telefono celular :</label><br>	
-                            <input type="Telefono" id="Telefono" placeholder="Numero de telefono">
-                        </div><br>
-                        </div>
-                        <div class="enviar-inscrip">
-                            <input type="button" class="enviar-ins" value="Inscribirse / Registrarse">
-                        </div>
-                    </form>
-                    </div>
-            </div>
-        </div>
+            <div class="img-inscrip-container wow fadeInRight">
+                <div class="img-robots wow fadeInRight">
+                    <img src="../img/Figure/inscrip.webp" alt="Robots para inscripción">
+                </div>
+            </div> -->
+    </div>
     </main>
+
     <!-- pie -->
     <footer id="g-footer">
-        <div class="flecha-top">
+        <div class="flecha-top mas-info">
             <a href="#header-grid-ins">
-                <img src="../img/scroll_arrows.png" class="flecha-arriba" alt="boton top menu">
+                <img src="../img/Icons/scroll_arrows.webp" class="flecha-arriba" alt="boton top menu">
             </a>
         </div>
         <div class="footer">
@@ -116,13 +87,13 @@
         </div>
         <div class="icons-footer">
             <a href="https://et13delpini.edu.ar/" target="_blank">
-                <img src="../img/delpini.png" class="resolucion-delpi"alt="logo delpini footer">
+                <img src="../img/Icons/delpini.webp" class="resolucion-delpi"alt="logo delpini footer">
             </a>
             <a href="https://www.facebook.com/ET13Delpini" target="_blank">
-                <img src="../img/facebook.png" alt="logo facebook footer">
+                <img src="../img/Icons/facebook.webp" alt="logo facebook footer">
             </a>
             <a href="https://www.youtube.com/channel/UCf4N6kbsjljnpUha3H01e1A" target="_blank">
-                <img src="../img/youtube.png" alt="logo youtube footer">
+                <img src="../img/Icons/youtube.webp" alt="logo youtube footer">
             </a>
         </div>
         </div>
@@ -131,5 +102,9 @@
 </div>
     <!-- bootstrap js -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/wow.min.js"></script><!-- wow js -->
+        <script> 
+            new WOW().init();
+        </script> 
 </body>
 </html>

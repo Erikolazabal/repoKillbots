@@ -306,41 +306,29 @@
 
 @media (min-width: 768px){
 
-    .texto-inscrip {
-        padding: 11px;
-        text-align: center;
-        font-size: $textXl;
-    }
-    .background-inscrip {
-        top: -5%;
+    .img-inscrip-container {
+        display: block;
     }
 
-    .background-inscrip2{
-        left: 8px;
-        margin: 0px 30px 30px 30px;
-    }
-
-    .form-centrado {
-        font-size: ($textXxl + 0.2em);
-        margin: 0 182px;
-        padding-top: 6px;
+    .container-inscrip .mitad-container {
+        left: 0;
+        width: 50%;
+        z-index: 2;
     }
 }
 
 /* min-width: 1024px de inscripciones */
 
 @media (min-width: 1024px){
-    .background-reglamento{
-        img {
-        height: 16em;
-        }
+
+    .container-inscrip .mitad-container {
+        width: 55%;
+    }
+    .img-inscrip-container {
+        width: 53%;
+        left: 51%;
     }
 
-    .background-inscrip2{
-        left: 22px;
-        margin: 0px 30px 30px 10px;
-    }
-    
     .form-centrado {
         font-size: ($textXxl + 0.2em);
         margin: 0 290px;
@@ -417,3 +405,5 @@
         height: 400px;
     }
 }
+
+

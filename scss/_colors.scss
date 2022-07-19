@@ -27,6 +27,8 @@ $bg-negro:hsl(0, 0%, 0%);
 
 .nav-link{
     color: $bg-blanco;
+    padding: 0;
+    margin: 6px;
     &:hover{
         color: #000000;
     }

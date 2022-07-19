@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*------- index -------*/
 /*------ palabras top ------*/
@@ -302,57 +303,105 @@ span.subrayado {
 
 /*--------- Inscripciones --------*/
 /*------ main Inscripciones ------*/
-.background-inscrip {
-  background-color: rgba(1, 39, 72, 0.78);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  color: #ffffff;
-  position: absolute;
-  width: 90%;
-  top: -6%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.background-inscrip2 {
-  background-color: rgba(1, 39, 72, 0.78);
-  color: #ffffff;
-  width: 90%;
-  height: 100%;
+.container-inscrip {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  box-sizing: border-box;
-  margin: 0px 30px 30px 16px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  width: 768px;
+  margin: 40px auto;
+  max-width: 80%;
+  min-height: 580px;
 }
-
-.inscripciones-title, .texto-inscrip {
-  padding: 30px;
-  text-align: center;
-  font-size: 1em;
+.container-inscrip .formulario-inscrip {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-
-.form-centrado {
-  font-size: 1em;
-  margin: 0 70px;
-  padding-top: 6px;
-}
-
-.enviar-inscrip {
-  width: 60%;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.enviar-ins {
-  font: bold 12px Verdana, Arial, Helvetica, sans-serif;
-  background: #1303ff;
-  font-size: 10px;
-  color: white;
+.container-inscrip .mitad-container {
+  left: 0;
   width: 100%;
-  border-radius: 30px;
-  height: 50px;
+  z-index: 2;
+}
+.container-inscrip .formu {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  height: 100%;
+  text-align: center;
+}
+.container-inscrip .formu h1, .container-inscrip .formu .h1 {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.container-inscrip .formu input {
+  margin: 4px;
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.container-inscrip .formu .input-med {
+  width: 47%;
+  margin: 0px;
+}
+.container-inscrip .formu a {
+  color: #333;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.container-inscrip .formu .iconos-container {
+  margin: 20px 0;
+}
+.container-inscrip .formu .iconos-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+.container-inscrip .formu .d-flex {
+  justify-content: space-between;
+}
+.container-inscrip .formu .proceso-inscrip {
+  font-size: 12px;
+}
+.container-inscrip .formu .boton-enviar {
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: #FF4B2B;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.img-inscrip-container {
+  position: absolute;
+  top: 0;
+  left: 44%;
+  width: 63%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 0;
+  display: none;
+}
+.img-inscrip-container .img-robots img {
+  width: 100%;
 }
 
 /*--------- Contacto --------*/
@@ -404,6 +453,45 @@ fieldset.contact-title {
   margin: 22px;
   border-style: none;
   height: 80%;
+}
+
+/*--------- 404 --------*/
+/*------ body 404 ------*/
+.body404 {
+  font-family: "Bebas Neue", cursive;
+  color: #888;
+  margin: 0;
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main h1, #main .h1 {
+  font-size: 3em;
+  display: inline-block;
+  padding-right: 12px;
+  margin-bottom: 40px;
+}
+#main .robots img {
+  width: 150px;
+}
+
+.volver a {
+  color: #fff;
+  background: #272727;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: arial, serif;
+  font-weight: bold;
+  border-radius: 0.5em;
 }
 
 /* ---- grid DE INDEX ---- */
@@ -504,22 +592,18 @@ fieldset.contact-title {
 /*------ Inscripciones ------*/
 /*------ grid de inscripciones ------*/
 .body-inscrip {
-  background-color: #ffffff;
+  background-color: #738b95;
 }
 
 .grid-inscripciones {
   display: grid;
   grid-template-columns: 100% 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "subnav" "main" "footer";
+  grid-template-areas: "nav" "main" "footer";
 }
 
 #g-nav {
   grid-area: nav;
-}
-
-#header-grid-ins {
-  grid-area: subnav;
 }
 
 #main-grid-ins {
@@ -10677,7 +10761,7 @@ textarea.form-control-lg {
 }
 
 .body-products {
-  background-image: url(../img/header-2.jpg);
+  background-image: url(../img/Headers/header-2.webp);
   background-attachment: fixed;
 }
 
@@ -10717,6 +10801,8 @@ textarea.form-control-lg {
 
 .nav-link {
   color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 6px;
 }
 .nav-link:hover {
   color: #000000;
@@ -10789,18 +10875,6 @@ textarea.form-control-lg {
 footer {
   background-color: hsl(355deg, 100%, 16%);
 }
-
-.flecha-top .flecha-arriba {
-  position: relative;
-  bottom: 20px;
-  left: 48%;
-  background-color: #000000;
-  width: 38px;
-  border-radius: 40px;
-  transform: rotate(180deg);
-  z-index: 0;
-}
-
 footer .copy {
   font-family: "Times New Roman", Times, serif;
   color: hsl(45deg, 75%, 43%);
@@ -10809,7 +10883,6 @@ footer .copy {
   padding: 0.5em 1em 2em 1em;
   font-size: 13px;
 }
-
 footer .icons-footer {
   text-align: right;
   position: relative;
@@ -10817,6 +10890,12 @@ footer .icons-footer {
 }
 footer .icons-footer a {
   text-decoration: none;
+}
+
+.flecha-top .flecha-arriba {
+  position: relative;
+  bottom: 20px;
+  transform: rotate(180deg);
 }
 
 img.resolucion-delpi {
@@ -11070,32 +11149,23 @@ img.resolucion-delpi {
 /* ---- MEDIAS QUERIS DE inscripciones ---- */
 /* min-width: 768px de inscripciones */
 @media (min-width: 768px) {
-  .texto-inscrip {
-    padding: 11px;
-    text-align: center;
-    font-size: 1.6em;
+  .img-inscrip-container {
+    display: block;
   }
-  .background-inscrip {
-    top: -5%;
-  }
-  .background-inscrip2 {
-    left: 8px;
-    margin: 0px 30px 30px 30px;
-  }
-  .form-centrado {
-    font-size: 2.2em;
-    margin: 0 182px;
-    padding-top: 6px;
+  .container-inscrip .mitad-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
   }
 }
 /* min-width: 1024px de inscripciones */
 @media (min-width: 1024px) {
-  .background-reglamento img {
-    height: 16em;
+  .container-inscrip .mitad-container {
+    width: 55%;
   }
-  .background-inscrip2 {
-    left: 22px;
-    margin: 0px 30px 30px 10px;
+  .img-inscrip-container {
+    width: 53%;
+    left: 51%;
   }
   .form-centrado {
     font-size: 2.2em;
