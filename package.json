@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass --watch scss/style.scss css/style2.css"
+    "compile:sass": "sass --watch scss/style.scss css/style2.css",
+    "build":"purgecss --css css/style2.css --content index.html views/**.html -o css/reducido.css"
   },
   "repository": {
     "type": "git",

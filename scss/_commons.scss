@@ -40,3 +40,20 @@ $width4:25%;
     border-radius: 20px;
     margin: auto;
 }
+
+/* ----- mapa style ----- */
+.mapa-container {
+    text-align: center;
+    font-size: $textXl;
+    height: 315px;
+    color: #ffffff;
+    margin: 26px;
+    background-color: rgb(0 0 0 / 70%);
+    border-radius: 60px;
+}
+
+fieldset.contact-title {
+    margin: 22px;
+    border-style: none;
+    height: 80%;
+}
