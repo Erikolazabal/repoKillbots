@@ -482,19 +482,20 @@ span.subrayado {
             width: 150px;
         }
     }
+    .volver{
+        a {
+        color: #fff;
+        background: #272727;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 13px;
+        font-family: arial, serif;
+        font-weight: bold;
+        border-radius: .5em;
+        }
+    }
 }
 
-.volver{
-    a {
-    color: #fff;
-    background: #272727;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 13px;
-    font-family: arial, serif;
-    font-weight: bold;
-    border-radius: .5em;
-}
-}
+
 
 

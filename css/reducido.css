@@ -449,6 +449,12 @@ fieldset.contact-title {
 
 /*--------- 404 --------*/
 /*------ body 404 ------*/
+.body404 {
+  font-family: "Bebas Neue", cursive;
+  color: #888;
+  margin: 0;
+  overflow: hidden;
+}
 
 #main {
   width: 100%;
@@ -467,6 +473,17 @@ fieldset.contact-title {
 }
 #main .robots img {
   width: 150px;
+}
+
+.volver a {
+  color: #fff;
+  background: #272727;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: arial, serif;
+  font-weight: bold;
+  border-radius: 0.5em;
 }
 
 /* ---- grid DE INDEX ---- */
