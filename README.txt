@@ -10,3 +10,5 @@ Buenas laura! estes es mi proyecto espero que te guste , algunas cosas para come
 * El 404 lo deje por fuera para no mesclarlo con los demas .html
 
 * Tambien subi solo lo necesario en el hosting gratuito 000webhost.
+
+* El css esta purgado por eso se llama reducido.
