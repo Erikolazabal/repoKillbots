@@ -461,11 +461,10 @@ span.subrayado {
     font-family: $secondaryFont;
     color: #888;
     margin: 0;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 #main{
-    width: 100%;
     height: 100vh;
     text-align: center;
     display: flex;
@@ -485,7 +484,8 @@ span.subrayado {
     }
 }
 
-.volver a {
+.volver{
+    a {
     color: #fff;
     background: #272727;
     text-decoration: none;
@@ -495,6 +495,6 @@ span.subrayado {
     font-weight: bold;
     border-radius: .5em;
 }
-
+}
 
 
