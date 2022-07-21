@@ -11,4 +11,4 @@ Buenas laura! estes es mi proyecto espero que te guste , algunas cosas para come
 
 * Tambien subi solo lo necesario en el hosting gratuito 000webhost.
 
-*el css esta purgado por eso se llama reducido.
+* El css esta purgado por eso se llama reducido.
